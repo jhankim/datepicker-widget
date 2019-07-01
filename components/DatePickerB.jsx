@@ -13,8 +13,10 @@ export default class DatePickerB extends React.Component {
     super();
 
     this.state = {
-      startDate: moment(),
-      endDate: moment().add(1, "week"),
+      startDate: moment().isoWeekday(6),
+      endDate: moment()
+        .isoWeekday(6)
+        .add(1, "week"),
       numberOfAdults: 2,
       numberOfChildren: 0,
       focusedInput: null
