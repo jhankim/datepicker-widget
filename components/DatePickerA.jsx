@@ -8,20 +8,7 @@ export default class DatePickerA extends React.Component {
   constructor() {
     super();
 
-    const dayINeed = 6;
-    const today = moment().isoWeekday();
-    let startDate;
-    if (today <= dayINeed) {
-      startDate = moment().isoWeekday(dayINeed);
-    } else {
-      startDate = moment()
-        .add(1, 'weeks')
-        .isoWeekday(dayINeed);
-    }
-    const endDate = moment(startDate).add(1, 'week');
-
     this.datePicker = React.createRef();
-
     this.state = {
       startDate: null,
       endDate: null,
