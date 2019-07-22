@@ -1,60 +1,97 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+#date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.calendar-info {
-  text-align: center;
-  padding: 0 1.5em 1.5em;
-  font-size: 14px;
-}
-
-.calendar-action {
-  border: none;
-  color: #fff;
-  line-height: 39px;
-  background: #ea6e63 !important;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none !important;
-  margin: 0;
-  padding: 0.3em 0.7em;
-  margin: 0 0 0 0.5em;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: Lato, Helvetica, Arial, Lucida, sans-serif;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-ul.dropdown-list {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: inline-block;
-    margin: 0 0 0 0.5em;
+  .calendar-info {
+    text-align: center;
+    padding: 0 1.5em 1.5em !important;
+    font-size: 14px;
   }
 
-  label,
-  input,
-  select {
-    font-size: 16px;
+  .calendar-action {
+    border: none;
+    color: #fff;
+    line-height: 39px;
+    background: #ea6e63 !important;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0.3em 0.7em;
+    margin: 0 0 0 1em;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Lato, Helvetica, Arial, Lucida, sans-serif;
     cursor: pointer;
+    vertical-align: middle;
   }
 
-  select {
+  ul.dropdown-list {
     display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 41px;
-    border-radius: 0;
-    padding: 2px;
-    border: 1px solid #bbb;
-    color: #4e4e4e;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 0 0 1em;
+    }
+
+    label,
+    input,
+    select {
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    select {
+      display: inline-block;
+      vertical-align: top;
+      width: 50px;
+      height: 41px;
+      border-radius: 0;
+      margin: 0 0 0 0.5em;
+      padding: 2px;
+      border: 1px solid #bbb;
+      color: #4e4e4e;
+      background-color: #fff;
+      vertical-align: middle;
+    }
+  }
+
+  input.DateInput_input {
+    color: #484848;
     background-color: #fff;
-    vertical-align: middle;
+    padding: 11px 11px 9px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    font-weight: normal;
+  }
+  .DayPicker_weekHeader_ul {
+    padding: 0 !important;
+  }
+
+  .CalendarMonth_table td {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .DateRangePickerInput_calendarIcon_svg {
+    vertical-align: unset !important;
+  }
+
+  .CalendarDay__selected,
+  .CalendarDay__selected:active,
+  .CalendarDay__selected:hover {
+    background: #ea6e62;
+    border: 1px double #ea6e62;
+  }
+
+  .CalendarDay__selected_span {
+    background: #ff9f95;
+    border: 1px double #ff9f95;
+    color: #fff;
   }
 }
